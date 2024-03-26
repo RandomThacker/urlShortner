@@ -8,6 +8,8 @@ const PORT = 8000;
 
 app.use(express.json())
 
+app.set("view engine", "ejs")
+
 connectToMongoDB('mongodb://localhost:27017/short-url')
 .then(()=>console.log("mongo db connected"))
 
