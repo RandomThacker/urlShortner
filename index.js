@@ -7,7 +7,7 @@ const staticRoute = require("./routes/staticRouter")
   // Initialize Express app
 const app = express()
 const PORT = 8000;
-
+/
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
